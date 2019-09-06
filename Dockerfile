@@ -26,7 +26,7 @@ RUN mkdir /data && \
 EXPOSE 3000
 VOLUME ["/data"]
 
-USER node
+USER root
 
 HEALTHCHECK CMD wget -O /dev/null -q http://localhost:3000
 
